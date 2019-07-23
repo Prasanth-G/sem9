@@ -19,8 +19,8 @@ public class App
         //QueryParser qp = new QueryParser("firstName", new StandardAnalyzer());
         //System.out.println(qp);
         
-        //String crawlStorageFolder = "/data/crawl/root";
-        String crawlStorageFolder = "D:\\data\\crawl\\root";
+        String crawlStorageFolder = "/data/crawl/root";
+        //String crawlStorageFolder = "D:\\data\\crawl\\root";
         int numberOfCrawlers = 10, maxPage = 10, MAX_CRAWL_DEPTH = 1;
 
         CrawlConfig config = new CrawlConfig();

@@ -1,4 +1,3 @@
-package C:\ProgramData\Anaconda3\Scripts\activate root;
 
 import org.junit.Test;
 
