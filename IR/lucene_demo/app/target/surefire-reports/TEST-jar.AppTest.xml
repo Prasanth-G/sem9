@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="jar.AppTest" time="0.104" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/prasanthsidharth/sem9/IR/lucene_demo/app/target/test-classes:/home/prasanthsidharth/sem9/IR/lucene_demo/app/target/classes:/home/prasanthsidharth/.m2/repository/edu/uci/ics/crawler4j/4.4.0/crawler4j-4.4.0.jar:/home/prasanthsidharth/.m2/repository/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.jar:/home/prasanthsidharth/.m2/repository/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.jar:/home/prasanthsidharth/.m2/repository/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.jar:/home/prasanthsidharth/.m2/repository/com/google/guava/guava/24.0-jre/guava-24.0-jre.jar:/home/prasanthsidharth/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/prasanthsidharth/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/prasanthsidharth/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/prasanthsidharth/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/prasanthsidharth/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/prasanthsidharth/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/home/prasanthsidharth/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/home/prasanthsidharth/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/prasanthsidharth/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/home/prasanthsidharth/.m2/repository/com/sleepycat/je/5.0.84/je-5.0.84.jar:/home/prasanthsidharth/.m2/repository/org/apache/tika/tika-parsers/1.16/tika-parsers-1.16.jar:/home/prasanthsidharth/.m2/repository/org/apache/tika/tika-core/1.16/tika-core-1.16.jar:/home/prasanthsidharth/.m2/repository/org/apache/james/apache-mime4j-core/0.8.1/apache-mime4j-core-0.8.1.jar:/home/prasanthsidharth/.m2/repository/org/apache/james/apache-mime4j-dom/0.8.1/apache-mime4j-dom-0.8.1.jar:/home/prasanthsidharth/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/prasanthsidharth/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/home/prasanthsidharth/.m2/repository/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24.jar:/home/prasanthsidharth/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.24/jcl-over-slf4j-1.7.24.jar:/home/prasanthsidharth/.m2/repository/org/apache/lucene/lucene-analyzers-common/8.1.1/lucene-analyzers-common-8.1.1.jar:/home/prasanthsidharth/.m2/repository/org/apache/lucene/lucene-core/8.1.1/lucene-core-8.1.1.jar:/home/prasanthsidharth/.m2/repository/org/apache/lucene/lucene-queryparser/8.1.1/lucene-queryparser-8.1.1.jar:/home/prasanthsidharth/.m2/repository/org/apache/lucene/lucene-queries/8.1.1/lucene-queries-8.1.1.jar:/home/prasanthsidharth/.m2/repository/org/apache/lucene/lucene-sandbox/8.1.1/lucene-sandbox-8.1.1.jar:/home/prasanthsidharth/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/prasanthsidharth/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/home/prasanthsidharth/sem9/IR/lucene_demo/app/target/surefire/surefirebooter117441328489178980.jar /home/prasanthsidharth/sem9/IR/lucene_demo/app/target/surefire 2019-07-22T15-17-45_917-jvmRun1 surefire8034759830771056472tmp surefire_01542676138285095343tmp"/>
+    <property name="surefire.test.class.path" value="/home/prasanthsidharth/sem9/IR/lucene_demo/app/target/test-classes:/home/prasanthsidharth/sem9/IR/lucene_demo/app/target/classes:/home/prasanthsidharth/.m2/repository/edu/uci/ics/crawler4j/4.4.0/crawler4j-4.4.0.jar:/home/prasanthsidharth/.m2/repository/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.jar:/home/prasanthsidharth/.m2/repository/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.jar:/home/prasanthsidharth/.m2/repository/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.jar:/home/prasanthsidharth/.m2/repository/com/google/guava/guava/24.0-jre/guava-24.0-jre.jar:/home/prasanthsidharth/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/prasanthsidharth/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/prasanthsidharth/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/prasanthsidharth/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/prasanthsidharth/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/prasanthsidharth/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/home/prasanthsidharth/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/home/prasanthsidharth/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/prasanthsidharth/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/home/prasanthsidharth/.m2/repository/com/sleepycat/je/5.0.84/je-5.0.84.jar:/home/prasanthsidharth/.m2/repository/org/apache/tika/tika-parsers/1.16/tika-parsers-1.16.jar:/home/prasanthsidharth/.m2/repository/org/apache/tika/tika-core/1.16/tika-core-1.16.jar:/home/prasanthsidharth/.m2/repository/org/apache/james/apache-mime4j-core/0.8.1/apache-mime4j-core-0.8.1.jar:/home/prasanthsidharth/.m2/repository/org/apache/james/apache-mime4j-dom/0.8.1/apache-mime4j-dom-0.8.1.jar:/home/prasanthsidharth/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/prasanthsidharth/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/home/prasanthsidharth/.m2/repository/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24.jar:/home/prasanthsidharth/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.24/jcl-over-slf4j-1.7.24.jar:/home/prasanthsidharth/.m2/repository/org/apache/lucene/lucene-analyzers-common/8.1.1/lucene-analyzers-common-8.1.1.jar:/home/prasanthsidharth/.m2/repository/org/apache/lucene/lucene-core/8.1.1/lucene-core-8.1.1.jar:/home/prasanthsidharth/.m2/repository/org/apache/lucene/lucene-queryparser/8.1.1/lucene-queryparser-8.1.1.jar:/home/prasanthsidharth/.m2/repository/org/apache/lucene/lucene-queries/8.1.1/lucene-queries-8.1.1.jar:/home/prasanthsidharth/.m2/repository/org/apache/lucene/lucene-sandbox/8.1.1/lucene-sandbox-8.1.1.jar:/home/prasanthsidharth/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/prasanthsidharth/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/prasanthsidharth"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="basedir" value="/home/prasanthsidharth/sem9/IR/lucene_demo/app"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/prasanthsidharth/sem9/IR/lucene_demo/app/target/surefire/surefirebooter117441328489178980.jar"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_212-8u212-b03-2~deb9u1-b03"/>
+    <property name="user.name" value="prasanthsidharth"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.14.111+"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/prasanthsidharth/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_212"/>
+    <property name="user.dir" value="/home/prasanthsidharth/sem9/IR/lucene_demo/app"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.212-b03"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="jar.AppTest" time="0.006"/>
+</testsuite>
