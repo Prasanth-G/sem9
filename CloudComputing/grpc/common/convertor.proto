@@ -1,0 +1,20 @@
+syntax="proto3";
+
+service Convertor {
+  rpc ConvertLength (LengthConvertorRequest) returns (LengthConvertorResponse);
+}
+
+enum LengthUnit {
+  KILOMETRE = 0;
+  YARD = 1;
+}
+
+message LengthConvertorRequest {
+  LengthUnit from = 1;
+  LengthUnit to = 2;
+  double value = 3;
+}
+
+message LengthConvertorResponse {
+  double value = 1;
+}
