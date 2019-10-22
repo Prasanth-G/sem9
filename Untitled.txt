@@ -1,0 +1,217 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+# Bagged Decision Trees for Classification
+import pandas
+from sklearn import model_selection
+from sklearn.ensemble import BaggingClassifier
+from sklearn.tree import DecisionTreeClassifier
+
+
+# In[2]:
+
+
+
+url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+dataframe = pandas.read_csv(url, names=names)
+array = dataframe.values
+X = array[:,0:8]
+Y = array[:,8]
+seed = 7
+kfold = model_selection.KFold(n_splits=10, random_state=seed)
+cart = DecisionTreeClassifier()
+num_trees = 100
+model = BaggingClassifier(base_estimator=cart, n_estimators=num_trees, random_state=seed)
+results = model_selection.cross_val_score(model, X, Y, cv=kfold)
+print(results)
+
+
+# model
+
+# In[10]:
+
+
+model.fit(X,Y)
+model.score(X,Y)
+
+
+# In[37]:
+
+
+import sklearn
+
+
+# In[42]:
+
+
+# Voting Ensemble for Classification
+import pandas
+from sklearn import model_selection
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.svm import SVC
+from sklearn.ensemble import VotingClassifier
+
+
+# In[43]:
+
+
+url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+
+
+# In[47]:
+
+
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+dataframe = pandas.read_csv(url, names=names)
+
+
+# In[52]:
+
+
+array = dataframe.values
+
+
+# In[55]:
+
+
+X = array[:,0:8]
+Y = array[:,8]
+
+
+# In[58]:
+
+
+seed = 7
+kfold = model_selection.KFold(n_splits=10, random_state=seed)
+
+
+# In[59]:
+
+
+kfold
+
+
+# In[83]:
+
+
+estimators = []
+model1 = LogisticRegression()
+estimators.append(('logistic', model1))
+model2 = DecisionTreeClassifier()
+estimators.append(('cart', model2))
+model3 = SVC(probability=True)
+estimators.append(('svm', model3))
+
+
+# In[84]:
+
+
+ensemble = VotingClassifier(estimators, voting='soft')
+
+
+# In[85]:
+
+
+ensemble.fit(X,Y)
+
+
+# In[80]:
+
+
+ensemble.probability = True
+
+
+# In[89]:
+
+
+ensemble.score(X,Y)
+
+
+# In[1]:
+
+
+import sklearn
+
+
+# In[6]:
+
+
+help(sklearn.ensemble.AdaBoostClassifier)
+
+
+# In[11]:
+
+
+from sklearn.ensemble import AdaBoostClassifier
+
+
+# In[12]:
+
+
+adaModel = AdaBoostClassifier()
+
+
+# In[13]:
+
+
+adaModel.fit(X,Y)
+
+
+# In[16]:
+
+
+from sklearn.neighbors import KNeighborsClassifier
+
+
+# In[26]:
+
+
+kNNmodel = KNeighborsClassifier()
+
+
+# In[18]:
+
+
+kNNmodel.fit(X,Y)
+
+
+# In[19]:
+
+
+kNNmodel.score(X,Y)
+
+
+# In[20]:
+
+
+from sklearn.model_selection import train_test_split
+
+
+# In[23]:
+
+
+help(train_test_split)
+
+
+# In[25]:
+
+
+x_train, x_test, y_train, y_test = train_test_split(X,Y, test_size = 0.1, random_state=99)
+
+
+# In[27]:
+
+
+kNNmodel.fit(x_train, y_train)
+
+
+# In[28]:
+
+
+kNNmodel.score(x_test, y_test)
+
